@@ -10,6 +10,11 @@ We can see how the two varibales, the similarity of stimuli and that of response
 # Hebbian model
 Based on Farrell & Lewandowsky (2018), a hebbian model was coded. Try hebbian_osgood_surface.py and you will find that this Hebbian model works well!
 
+The graph below shows the results of a simulation. Compare this graph with Osgood's graph!
+
+
+![graph](https://raw.githubusercontent.com/grocio/hebbian-osgood-surface/master/hos_graph.png）
+
 # Dependencies
 1. numpy
 2. matplotlib
