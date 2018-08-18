@@ -12,8 +12,7 @@ Based on Farrell & Lewandowsky (2018), a hebbian model was coded. Try hebbian_os
 
 The graph below shows the results of a simulation. Compare this graph with Osgood's graph!
 
-
-![graph](https://raw.githubusercontent.com/grocio/hebbian-osgood-surface/master/hos_graph.png）
+![graph](https://raw.githubusercontent.com/grocio/hebbian-osgood-surface/master/hos_graph.png)
 
 # Dependencies
 1. numpy
