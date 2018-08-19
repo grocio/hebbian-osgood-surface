@@ -16,7 +16,7 @@ The graph below shows the results of a simulation. Compare this graph with Osgoo
 
 # Future direction
 That said, the values of the performance (Accuracy) for the Response of 0.0 to -1.0 do not fit with Osgood's surface well.
-One possible proble is the assumption on the similarity: I assume that the antagonistic response of *r* as *-r*.
+One possible problem is the assumption on the similarity: I assume that the antagonistic response of *r* as *-r*.
 I might have to rethink about how the antagonistic response can be expressed in this hebbian model.
 
 # Dependencies
