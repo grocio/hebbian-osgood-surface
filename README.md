@@ -15,9 +15,9 @@ The graph below shows the results of a simulation. Compare this graph with Osgoo
 ![graph](https://raw.githubusercontent.com/grocio/hebbian-osgood-surface/master/hos_graph.png)
 
 # Future direction
-That said, the values of the performance (Accuracy) for the Response of 0.0 to -1.0 does not fit with Osgood's surface well.
+That said, the values of the performance (Accuracy) for the Response of 0.0 to -1.0 do not fit with Osgood's surface well.
 One possible proble is the assumption on the similarity: I assume that the antagonistic response of *r* as *-r*.
-I might rethink about how the antagonistic response can be expressed in this hebbian model.
+I might have to rethink about how the antagonistic response can be expressed in this hebbian model.
 
 # Dependencies
 1. numpy
