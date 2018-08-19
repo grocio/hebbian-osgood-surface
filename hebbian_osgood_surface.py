@@ -12,9 +12,10 @@ def cos_sim(v1, v2):
 def normalise(v):
     return v / np.linalg.norm(v)
 
-num_samples = 11 # It should be 11 in this script...
+num_samples_s = 11 # It should be 11 in this script...
+num_samples_r = 21 # It should be 21 in this script...
 
-def hebbian_osgood_surfacer(check_list, unit_num, alpha, noise_strength, num_runs):
+def hebbian_osgood_surfacer(check_list, unit_num, alpha, noise_strength, num_runs, num_samples_s, num_samples_r):
     """
     check_list: 'transfer' or 'retroaction'. They seem identical though...
     unit_num: 2**int. It must be a power of 2. The number of the units.
@@ -28,19 +29,17 @@ def hebbian_osgood_surfacer(check_list, unit_num, alpha, noise_strength, num_run
     s1 = normalise(s1)
     r1 = normalise(r1)
 
-    num_samples = 11
-
-    results = np.zeros((num_samples,num_samples)) 
+    results = np.zeros((num_samples_s,num_samples_r)) 
 
     # 1st pair
     W = alpha*np.outer(r1, s1)
 
     # 2nd pair
     for run in range(num_runs):
-        for i in range(num_samples):
-            for j in range(num_samples): 
+        for i in range(num_samples_s):
+            for j in range(num_samples_r): 
                 gamma_s = i * 0.1
-                gamma_r = j * 0.1
+                gamma_r = j * 0.1 - 1.0
 
                 s2 = gamma_s*s1 + (1-gamma_s)*orthog_vs[2]
                 s2 = normalise(s2)
@@ -62,12 +61,14 @@ def hebbian_osgood_surfacer(check_list, unit_num, alpha, noise_strength, num_run
 
     return results
 
-results = hebbian_osgood_surfacer(check_list='transfer', unit_num=2**4, alpha=1, noise_strength=0.20, num_runs=5000)
+results = hebbian_osgood_surfacer(check_list='transfer', unit_num=2**4, alpha=1,
+                                    noise_strength=0.20, num_runs=5000,
+                                    num_samples_s=num_samples_s, num_samples_r=num_samples_r)
 
 
 # Visualising
-x = np.linspace(0,1,num_samples)
-y = np.linspace(0,1,num_samples)
+x = np.linspace(-1,1,num_samples_r)
+y = np.linspace(0,1,num_samples_s)
 X, Y = np.meshgrid(x, y)
 
 fig = plt.figure()
