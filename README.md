@@ -1,7 +1,7 @@
 # hebbian-osgood-surface
 Osgood's surface (Osgood, 1949) was simulated by a Hebbian model. Osgood's surface summarises the behavioural data on paired associative learning. Speficially, it targets the situation in which participants learn first lists and then learn second lists.
 
-List1: Stimulus1 - Response2 -> List2: Stimulus2 - Response2
+List1: Stimulus1 - Response1 -> List2: Stimulus2 - Response2
 
 Osgood's surface is a surface on a three-dimensional space. In that three-dimensional space, the height shows transfer or retroaction. Roughly speaking, it corresponds to memory performance (Please read the original article!!). The width shows the similarity of stimuli (e.g., the similarity of Stimulu1 and Stimulus2). The length shows the similarity of responses (e.g., the similarity of Response1 and Response2).
 
