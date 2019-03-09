@@ -9,7 +9,7 @@ For example, List1: apple - Toyota -> List2: orange - Porsche
 
 In this case, the similarity of stimuli should be high (apple and orange are semantically related to each other) and that of responses also should be high.
 
-In another case, say, List1: apple - Toyota -> cigarette - Porsche
+In another case, say, List1: apple - Toyota -> List2: cigarette - Porsche
 
 The similarity of stimuli (i.e., apple and cigarette) should be relatively low.
 
